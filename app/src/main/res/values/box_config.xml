@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="colorRed">#ff0000</color>-->
+    <!--<color name="colorBlue">#0000ff</color>-->
+    <!--<color name="colorYellow">#FFFF00</color>-->
+    <!--<color name="colorPurple">#551a8b</color>-->
+    <!--<color name="colorGreen">#008000</color>-->
+    <!--<color name="colorOrange">#ffa500</color>-->
+
+    <string name="colorRed">Red</string>
+    <string name="colorBlue">Blue</string>
+    <string name="colorYellow">Yellow</string>
+    <string name="colorPurple">Purple</string>
+    <string name="colorGreen">Green</string>
+    <string name="colorOrange">Orange</string>
+
+    <array name="small_box_colors">
+        <item>@string/colorRed</item>
+        <item>@string/colorBlue</item>
+        <item>@string/colorYellow</item>
+    </array>
+
+    <array name="medium_box_colors">
+        <item>@string/colorRed</item>
+        <item>@string/colorYellow</item>
+        <item>@string/colorPurple</item>
+        <item>@string/colorGreen</item>
+    </array>
+
+    <array name="large_box_colors">
+        <item>@string/colorGreen</item>
+        <item>@string/colorOrange</item>
+        <item>@string/colorBlue</item>
+    </array>
+
+    <array name="small_box_size">
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+    </array>
+
+    <array name="medium_box_size">
+        <item>100</item>
+        <item>25</item>
+        <item>25</item>
+    </array>
+
+    <array name="large_box_size">
+        <item>75</item>
+        <item>75</item>
+        <item>75</item>
+    </array>
+
+</resources>
