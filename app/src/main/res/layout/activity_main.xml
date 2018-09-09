@@ -5,7 +5,7 @@
 
         <variable
             name="viewModel"
-            type="software.doit.testapp.view.main.MainActivityViewModel" />
+            type="software.doit.boxio.view.main.MainActivityViewModel" />
     </data>
 
     <LinearLayout
