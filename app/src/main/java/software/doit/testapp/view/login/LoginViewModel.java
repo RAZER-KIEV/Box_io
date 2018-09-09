@@ -47,7 +47,6 @@ public class LoginViewModel extends BaseViewModel {
         if (StringValidator.validateEmail(mail) && StringValidator.validatePass(pass)) {
             Disposable disposable = repository
                     .login(mail, pass)
-                    //.onExceptionResumeNext()d
                     .takeUntil(new Predicate<User>() {
                         @Override
                         public boolean test(User user) throws Exception {
@@ -58,10 +57,9 @@ public class LoginViewModel extends BaseViewModel {
                         Timber.d("tryToLogin.onNext.user = " + user);
                         currentUser = user;
                         userCounter++;
-                        //disposables.clear();
                     }, throwable -> {
                         Timber.d(errorMessage = "tryToLogin.onError  = " + throwable.getMessage());
-                        toastMessage.postValue(errorMessage);
+                        toastMessage.postValue("User not found. Register new one.");
                         enableRegisterMode.postValue(true);
                         showProgress.setValue(false);
                     }, () -> {
