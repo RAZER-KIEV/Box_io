@@ -22,4 +22,9 @@
     <string name="action_settings">Settings</string>
     <string name="name">Name</string>
     <string name="reg_new_usr">Register new user</string>
+    <string name="now_you_can_order_the_box_nlet_s_look_what_we_have">Now You can order the box! Let\'s look what we have!</string>
+    <string name="chose_size">Chose size:</string>
+    <string name="chose_color">Chose color:</string>
+    <string name="add_my_name_on_the_box">add my name on the box</string>
+    <string name="order_box">order box</string>
 </resources>

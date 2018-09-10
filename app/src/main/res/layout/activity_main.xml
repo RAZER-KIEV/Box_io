@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Now You can order the box!\nLet's look what we have!"
+            android:text="@string/now_you_can_order_the_box_nlet_s_look_what_we_have"
             android:textSize="16sp" />
 
         <View style="@style/DividerView" />
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Chose size:"
+            android:text="@string/chose_size"
             android:textSize="16sp" />
 
         <Spinner
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Chose color:"
+            android:text="@string/chose_color"
             android:textSize="16sp"
             android:visibility="gone" />
 
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:onCheckedChanged="@{viewModel::onAddNameChanged}"
-            android:text="add my name on the box"
+            android:text="@string/add_my_name_on_the_box"
             android:textSize="16sp" />
 
         <View
@@ -81,7 +81,7 @@
             android:layout_margin="16dp"
             android:background="@color/colorPrimary"
             android:onClick="@{viewModel::orderBox}"
-            android:text="order box"
+            android:text="@string/order_box"
             android:textColor="@android:color/white"
             android:textSize="16sp" />
 
