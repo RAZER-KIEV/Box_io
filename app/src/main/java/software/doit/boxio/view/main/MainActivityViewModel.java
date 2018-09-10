@@ -86,8 +86,8 @@ public class MainActivityViewModel extends BaseViewModel {
     }
 
     public void onSizeChosen(int index) {
-        collectDataForColorSpinner();
         chosenSizeIndex.setValue(index);
+        collectDataForColorSpinner();
     }
 
     public void onColorChosen(int index) {

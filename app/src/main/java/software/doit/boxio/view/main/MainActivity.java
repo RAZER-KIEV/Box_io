@@ -74,6 +74,7 @@ public class MainActivity extends DaggerAppCompatActivity {
         binding.getViewModel().boxSizes.observe(this, new Observer<List<String>>() {
             @Override
             public void onChanged(@Nullable List<String> strings) {
+                strings.add(0, "");
                 sizeAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_spinner_item, strings);
                 sizeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -92,8 +93,6 @@ public class MainActivity extends DaggerAppCompatActivity {
                         Timber.d("sizeAdapter.onNothingSelected");
                     }
                 });
-                spinner.setSelection(-1);
-                spinner.setSelected(true);
             }
         });
 

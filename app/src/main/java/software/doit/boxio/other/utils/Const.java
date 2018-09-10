@@ -9,8 +9,8 @@ public interface Const {
     String IO_THREAD = "IO_THREAD";
 
     //box size indexes
-    int SMALL_BOX_INDEX = 0;
-    int MEDIUM_BOX_INDEX = 1;
-    int LARGE_BOX_INDEX = 2;
+    int SMALL_BOX_INDEX = 1;
+    int MEDIUM_BOX_INDEX = 2;
+    int LARGE_BOX_INDEX = 3;
 
 }
